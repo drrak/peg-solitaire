@@ -3,4 +3,4 @@
 
 English Peg Solitaire: https://drrak.github.io/peg-solitaire/
 
-Europan Peg Solitaire: https://drrak.github.io/peg-solitaire/eu-peg-solitaire.htm
+European Peg Solitaire: https://drrak.github.io/peg-solitaire/eu-peg-solitaire.htm
