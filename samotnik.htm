@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="pl"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Peg Solitaire (Samotnik)</title>
 	<meta charset="UTF-8">
 	<meta content="Mateusz Dański" name="author">
 	<meta content="© Matto Matti 2016" name="copyright">
-</head>
-<body style="background:#EEE">
-<div>
 <style>
 .fel{position:absolute;height:120px;width:120px}
 .fbl{fill:gray}
-.fbl:hover{stroke:black}
-.fcirc:hover{stroke:blue}
-.fsel{stroke:yellow}
+.fbl:hover,.fcirc:hover{stroke:#ababab}
+.fsel{stroke:white}
 #gboard{position:relative;background:#552200;width:848px;height:848px;margin: 0 auto}
 </style>
+</head>
+<body>
 <div id="gboard"></div>
-</div>
+
 <script>
 var ids, elements;
 
@@ -98,4 +97,5 @@ function showMsg (msg) {
 newGame();
 </script>
 </div>
-</body></html>
+</body>
+</html>
