@@ -7,23 +7,22 @@
 	<meta content="© Matto Matti 2016" name="copyright">
 </head>
 <body style="background:#EEE">
-<div style="width:800px; margin: 0 auto;background:#FFF; padding:16px">
+<div>
 <style>
-.fel{position:absolute;height:100px;width:100px}
+.fel{position:absolute;height:120px;width:120px}
 .fbl{fill:gray}
 .fbl:hover{stroke:black}
 .fcirc:hover{stroke:blue}
 .fsel{stroke:yellow}
-#gwin{display:table;position:absolute;top:0;left:0;width:428px;height:428px;z-index:30;background:rgba(0,0,0,0.75);text-align:center;font-size:20px;color:#FFFFFF;}
-#gboard{position:relative;background:#552200;width:708px;height:708px;margin: 0 auto}
+#gboard{position:relative;background:#552200;width:848px;height:848px;margin: 0 auto}
 </style>
-<div style="margin:4px"><div id="gboard"></div></div>
+<div id="gboard"></div>
 </div>
 <script>
 var ids, elements;
 
 function getElement(posy, posx){
-	return '<svg class="fel" style="top:' + (4 + posy*100) +  'px;left:' + (4 + posx*100) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#c77037" stroke="#9f5a2b" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
+	return '<svg class="fel" style="top:' + (4 + posy*120) +  'px;left:' + (4 + posx*120) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#c77037" stroke="#9f5a2b" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
 }
 
 function newGame(){
