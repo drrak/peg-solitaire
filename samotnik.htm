@@ -43,7 +43,6 @@ function newGame(){
 		}
 	}
 	board.innerHTML = s.replace('el3x3" class="fcirc', 'el3x3" class="fbl');
-	//showMsg("Oczekiwanie na rozpoczęcie rozgrywki");
 	elements = 32;
 	ids = "";
 }
@@ -54,7 +53,6 @@ function el_click(el){
 			ids.className.baseVal="fcirc";
 		ids = el;
 		ids.className.baseVal="fsel";
-		//showMsg("Wybrano pionek");
 	} else if (el.className.baseVal == "fbl" && ids != "") {
 		var posr = document.getElementById(getPosBetween(ids.id, el.id));
 		if(checkDist(ids.id, el.id) && posr.className.baseVal == "fcirc"){
@@ -62,17 +60,9 @@ function el_click(el){
 			el.className.baseVal="fcirc";
 			posr.className.baseVal="fbl";
 			ids = "";
-			//showMsg("Wykonano ruch");
 			elements--;
-		} //else {
-			//showMsg("Nieprawidłowy ruch!");
-		//}
-	} //else if (el.className.baseVal == "fbl"  && ids == ""){
-		//showMsg("Nie można wybrać pustego pola!");
-	//}
-	//if(elements == 1){
-		//showMsg("Zagadka rozwiązana!");
-	//}
+		}
+	}
 }
 
 function checkDist (str1, str2){
@@ -91,9 +81,6 @@ function getPos (str){
 	return str.replace("el", "").split("x");
 }
 
-//function showMsg (msg) {
-	//document.getElementById("gstatus").innerHTML = msg;
-//}
 newGame();
 </script>
 </div>
