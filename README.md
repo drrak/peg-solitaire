@@ -8,3 +8,5 @@ European Peg Solitaire: https://drrak.github.io/peg-solitaire/eu-peg-solitaire.h
 Wiegleb Peg Solitaire: https://drrak.github.io/peg-solitaire/de-peg-solitaire.htm
 
 Asymmetrical Peg Solitaire: https://drrak.github.io/peg-solitaire/as-peg-solitaire.htm
+
+Diamond Peg Solitaire: https://drrak.github.io/peg-solitaire/di-peg-solitaire.htm
