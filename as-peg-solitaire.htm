@@ -18,7 +18,7 @@
 <div id="gboard"></div>
 
 <script>
-var ids;//, elements;
+var ids;
 
 function getElement(posy, posx){
 	return '<svg class="fel" style="top:' + (4 + posy*105) +  'px;left:' + (4 + posx*105) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#c77037" stroke="#9f5a2b" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
@@ -43,7 +43,6 @@ function newGame(){
 		}
 	}
 	board.innerHTML = s.replace('el3x4" class="fcirc', 'el3x4" class="fbl');
-	//elements = 32;
 	ids = "";
 }
 
@@ -60,7 +59,6 @@ function el_click(el){
 			el.className.baseVal="fcirc";
 			posr.className.baseVal="fbl";
 			ids = "";
-			//elements--;
 		}
 	}
 }
