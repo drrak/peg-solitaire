@@ -31,14 +31,12 @@ function newGame(){
 		for(var y = 0; y < 3; y++){
 			s += getElement(y, x);
 		}
-	}
-	for(var x = 0; x < 9; x++){
-		for(var y = 3; y < 6; y++){
+		for(var y = 6; y < 9; y++){
 			s += getElement(y, x);
 		}
 	}
-	for(var x = 3; x < 6; x++){
-		for(var y = 6; y < 9; y++){
+	for(var x = 0; x < 9; x++){
+		for(var y = 3; y < 6; y++){
 			s += getElement(y, x);
 		}
 	}
