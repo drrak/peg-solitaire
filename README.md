@@ -1,4 +1,4 @@
-# peg solitaire (samotnik)
+# Peg Solitaire (Samotnik)
 źródło: https://mattomatti.com/pl/g05d
 
 English Peg Solitaire: https://drrak.github.io/peg-solitaire/
