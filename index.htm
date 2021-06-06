@@ -7,11 +7,12 @@
 	<meta content="Mateusz Dański" name="author">
 	<meta content="© Matto Matti 2016" name="copyright">
 <style>
+body{background:#ccc}
 .fel{position:absolute;height:120px;width:120px}
-.fbl{fill:gray}
+.fbl{fill:#ccc}
 .fbl:hover,.fcirc:hover{stroke:#bbbbbb}
 .fsel{stroke:white}
-#gboard{position:relative;background:#552200;width:848px;height:848px;margin: 0 auto}
+#gboard{position:relative;background:#ccc;width:848px;height:848px;margin: 0 auto}
 </style>
 </head>
 <body>
@@ -21,7 +22,7 @@
 var ids;
 
 function getElement(posy, posx){
-	return '<svg class="fel" style="top:' + (4 + posy*120) +  'px;left:' + (4 + posx*120) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#c77037" stroke="#9f5a2b" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
+	return '<svg class="fel" style="top:' + (4 + posy*120) +  'px;left:' + (4 + posx*120) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#969696" stroke="#616161" stroke-width="1.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
 }
 
 function newGame(){
