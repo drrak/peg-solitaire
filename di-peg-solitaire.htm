@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Diamond Peg Solitaire (Samotnik)</title>
-	<meta charset="UTF-8">
-	<meta content="Mateusz Dański" name="author">
-	<meta content="© Matto Matti 2016" name="copyright">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Diamond Peg Solitaire (Samotnik)</title>
+<meta charset="UTF-8">
+<meta content="Mateusz Dański" name="author">
+<meta content="© Matto Matti 2016" name="copyright">
 <style>
-body{background:#ccc}
+body,#gboard{background:#ccc}
 .fel{position:absolute;height:93px;width:93px}
 .fbl{fill:#ccc}
 .fbl:hover,.fcirc:hover{stroke:#bbbbbb}
 .fsel{stroke:white}
-#gboard{position:relative;background:#ccc;width:845px;height:845px;margin: 0 auto}
+#gboard{position:relative;width:845px;height:845px;margin: 0 auto}
 </style>
 </head>
 <body>
@@ -22,7 +22,7 @@ body{background:#ccc}
 var ids;
 
 function getElement(posy, posx){
-	return '<svg class="fel" style="top:' + (4 + posy*93) +  'px;left:' + (4 + posx*93) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#969696" stroke="#616161" stroke-width="1.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
+	return '<svg class="fel" style="top:' + (4 + posy*93) +  'px;left:' + (4 + posx*93) + 'px" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#969696" stroke="#616161" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
 }
 
 function newGame(){
