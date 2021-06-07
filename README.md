@@ -1,6 +1,6 @@
 # Peg Solitaire (Samotnik)
 Źródło: https://mattomatti.com/pl/g05d
-
+---
 English Peg Solitaire: https://drrak.github.io/peg-solitaire/en/
 
 European Peg Solitaire: https://drrak.github.io/peg-solitaire/eu/
