@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Diamond Peg Solitaire (Samotnik)</title>
+<title>Wiegleb Peg Solitaire (Samotnik)</title>
 <meta content="Mateusz Dański" name="author">
 <meta content="© Matto Matti 2016" name="copyright">
 <style>
@@ -26,40 +26,16 @@ function getElement(posy, posx){
 function newGame(){
 	var board = document.getElementById("gboard");
 	var s = "";
-	for(var x = 4; x < 5; x++){
-		for(var y = 0; y < 1; y++){
-			s += getElement(y, x);
-		}
-		for(var y = 8; y < 9; y++){
-			s += getElement(y, x);
-		}
-	}
 	for(var x = 3; x < 6; x++){
-		for(var y = 1; y < 2; y++){
+		for(var y = 0; y < 3; y++){
 			s += getElement(y, x);
 		}
-		for(var y = 7; y < 8; y++){
-			s += getElement(y, x);
-		}
-	}
-	for(var x = 2; x < 7; x++){
-		for(var y = 2; y < 3; y++){
-			s += getElement(y, x);
-		}
-		for(var y = 6; y < 7; y++){
-			s += getElement(y, x);
-		}
-	}
-	for(var x = 1; x < 8; x++){
-		for(var y = 3; y < 4; y++){
-			s += getElement(y, x);
-		}
-		for(var y = 5; y < 6; y++){
+		for(var y = 6; y < 9; y++){
 			s += getElement(y, x);
 		}
 	}
 	for(var x = 0; x < 9; x++){
-		for(var y = 4; y < 5; y++){
+		for(var y = 3; y < 6; y++){
 			s += getElement(y, x);
 		}
 	}

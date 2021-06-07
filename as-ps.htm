@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Diamond Peg Solitaire (Samotnik)</title>
+<title>Asymmetrical Peg Solitaire (Samotnik)</title>
 <meta content="Mateusz Dański" name="author">
 <meta content="© Matto Matti 2016" name="copyright">
 <style>
 body,#gboard{background:#ccc}
-.fel{position:absolute;height:93px;width:93px}
+.fel{position:absolute;height:105px;width:105px}
 .fbl{fill:#ccc}
 .fsel{stroke:white}
 #gboard{position:absolute;width:848px;height:848px;margin:0;top:50%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
@@ -20,50 +20,26 @@ body,#gboard{background:#ccc}
 var ids;
 
 function getElement(posy, posx){
-	return '<svg class="fel" style="top:' + (4 + posy*93) +  'px;left:' + (4 + posx*93) + 'px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#969696" stroke="#616161" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
+	return '<svg class="fel" style="top:' + (4 + posy*105) +  'px;left:' + (4 + posx*105) + 'px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.999195 27.999199"><g transform="translate(-60.286 -52.648)"><circle id="el'+posx+"x"+posy+'" class="fcirc" onclick="el_click(this)"  cx="74.286" cy="66.648" r="10.954" fill="#969696" stroke="#616161" stroke-width="2.091" stroke-linecap="round" stroke-linejoin="bevel"/></g></svg>';
 }
 
 function newGame(){
 	var board = document.getElementById("gboard");
 	var s = "";
-	for(var x = 4; x < 5; x++){
-		for(var y = 0; y < 1; y++){
+	for(var x = 2; x < 5; x++){
+		for(var y = 0; y < 3; y++){
 			s += getElement(y, x);
 		}
-		for(var y = 8; y < 9; y++){
-			s += getElement(y, x);
-		}
-	}
-	for(var x = 3; x < 6; x++){
-		for(var y = 1; y < 2; y++){
-			s += getElement(y, x);
-		}
-		for(var y = 7; y < 8; y++){
+		for(var y = 6; y < 8; y++){
 			s += getElement(y, x);
 		}
 	}
-	for(var x = 2; x < 7; x++){
-		for(var y = 2; y < 3; y++){
-			s += getElement(y, x);
-		}
-		for(var y = 6; y < 7; y++){
+	for(var x = 0; x < 8; x++){
+		for(var y = 3; y < 6; y++){
 			s += getElement(y, x);
 		}
 	}
-	for(var x = 1; x < 8; x++){
-		for(var y = 3; y < 4; y++){
-			s += getElement(y, x);
-		}
-		for(var y = 5; y < 6; y++){
-			s += getElement(y, x);
-		}
-	}
-	for(var x = 0; x < 9; x++){
-		for(var y = 4; y < 5; y++){
-			s += getElement(y, x);
-		}
-	}
-	board.innerHTML = s.replace('el4x4" class="fcirc', 'el4x4" class="fbl');
+	board.innerHTML = s.replace('el3x4" class="fcirc', 'el3x4" class="fbl');
 	ids = "";
 }
 
